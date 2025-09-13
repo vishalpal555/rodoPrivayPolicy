@@ -1,52 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Privacy Policy</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Roodo — Privacy Policy</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-      line-height: 1.6;
-    }
-    h1 {
-      text-align: center;
-    }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height:1.6; color:#111; padding:32px; background:#f7f9fb; }
+    main { max-width:860px; margin:0 auto; background:#fff; padding:28px; border-radius:10px; box-shadow:0 6px 20px rgba(17,24,39,0.06); }
+    h1,h2,h3 { color:#0b6b4a; margin-top:1.2rem; }
+    p { margin:0.6rem 0; }
+    ul { margin:0.6rem 0 0.6rem 1.2rem; }
+    .muted { color:#556; font-size:0.95rem; }
+    footer { margin-top:28px; font-size:0.9rem; color:#555; }
+    .note { background:#fff8e6; padding:10px; border-left:4px solid #ffd275; border-radius:6px; margin:12px 0; }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p>Effective Date: April 11, 2025</p>
+  <main>
+    <h1>Roodo — Privacy Policy</h1>
+    <p class="muted">Effective date: <strong>13 September 2025</strong></p>
 
-  <p>This Privacy Policy describes how your personal information is collected, used, and shared when you use our app ("we", "our", or "us").</p>
+    <p>
+      Thank you for using <strong>Roodo</strong> (“we”, “us”, “our”). This Privacy Policy explains how we collect, use, disclose, and protect information about you when you use our ride-hailing mobile application (the “App”) and related services.
+    </p>
 
-  <h2>Information We Collect</h2>
-  <p>We may collect personal information such as your email address, phone number, or device data if required for app functionality.</p>
+    <h2>1. Information We Collect</h2>
+    <p>We collect the following types of information to provide and improve our services:</p>
+    <ul>
+      <li><strong>Account information:</strong> Email address, name or display name, profile photo (optional).</li>
+      <li><strong>Authentication data:</strong> One-time passwords (OTP) for email verification, hashed authentication tokens.</li>
+      <li><strong>Device & usage data:</strong> Device model, operating system, app version, crash logs, IP address, and analytics data about how you use the app.</li>
+      <li><strong>Location data:</strong> Real-time and historical location data (GPS and derived locations) while the app is active or when you give explicit background permission. Location is used for ride matching, navigation, and showing nearby captains.</li>
+    </ul>
 
-  <h2>How We Use Your Information</h2>
-  <p>We use your information solely for providing and improving our services, such as:</p>
-  <ul>
-    <li>Authentication and account management</li>
-    <li>Personalization and feature optimization</li>
-    <li>Customer support</li>
-  </ul>
+    <h2>2. How We Use Your Information</h2>
+    <p>We use your information for the following purposes:</p>
+    <ul>
+      <li>To create and manage your account, and to verify your email via OTP.</li>
+      <li>To match riders and captains and display captains near you using geo-hashing for spatial indexing.</li>
+      <li>To provide real-time updates and communication using WebSocket connections for high throughput and low latency.</li>
+      <li>For navigation and turn-by-turn routing during an active ride.</li>
+      <li>To provide customer support, respond to legal requests, and ensure platform safety.</li>
+      <li>To detect, prevent, and mitigate fraud, abuse, or technical issues.</li>
+      <li>To analyze and improve our services, and to deliver relevant notifications and updates.</li>
+    </ul>
 
-  <h2>Data Sharing</h2>
-  <p>We do not share your personal data with third parties, except as required by law or with your explicit consent.</p>
+    <h2>3. Location Data — Details & Controls</h2>
+    <p>
+      Location is central to our service. We collect location data in the following ways:
+    </p>
+    <ul>
+      <li><strong>While app is in use:</strong> We request periodic location updates to provide accurate pickup, ETA, and route tracking.</li>
+      <li><strong>Background location (optional):</strong> If you grant background location permission, we may collect location updates when the app is not in the foreground — for example, to continue tracking an ongoing trip. Background location is only used with your explicit consent.</li>
+      <li><strong>Privacy protections:</strong> Before being sent to our servers, location points are processed with geo-hashing. Data is transmitted over encrypted channels and stored securely.</li>
+    </ul>
+    <div class="note">
+      <strong>Control:</strong> You can disable location access or revoke background location permission in your device settings at any time. Disabling location will limit core app functionality (ride requests, matching, and navigation).
+    </div>
 
-  <h2>Security</h2>
-  <p>We implement appropriate security measures to protect your data from unauthorized access.</p>
+    <h2>4. Data Sharing & Third Parties</h2>
+    <p>We do not sell your personal information. We may share data in the following limited situations:</p>
+    <ul>
+      <li><strong>Service providers:</strong> Third parties that provide services for us (e.g., mapping providers, push notifications, analytics). These providers only receive the information necessary to perform their role.</li>
+      <li><strong>Captains and riders:</strong> During an active ride, relevant trip information (pickup location, destination, rider name or anonymized identifier, and route) is shared with the assigned captain.</li>
+      <li><strong>Legal requests:</strong> We may disclose data to comply with laws, regulations, or law enforcement requests where legally required.</li>
+      <li><strong>Business transfers:</strong> If the company is involved in a merger or acquisition, user data may be transferred as part of that transaction.</li>
+    </ul>
 
-  <h2>Children's Privacy</h2>
-  <p>We do not knowingly collect information from children under 13. If you believe your child provided personal data, please contact us.</p>
+    <h2>5. Data Retention</h2>
+    <p>
+      We retain personal data only as long as necessary to provide services, comply with legal obligations, and ensure safety.
+    </p>
+    <ul>
+      <li><strong>Account data:</strong> Retained while your account is active and for a short period after deletion.</li>
+      <li><strong>Location history:</strong> Retained for <strong>[LOCATION_RETENTION_PERIOD]</strong> (e.g., 30–90 days) for dispute resolution and safety. After that, it is deleted or anonymized.</li>
+      <li><strong>Logs & analytics:</strong> Retained in aggregated or pseudonymized form for up to <strong>[ANALYTICS_RETENTION_PERIOD]</strong>.</li>
+    </ul>
 
-  <h2>Changes</h2>
-  <p>We may update this policy from time to time. Continued use of our app constitutes acceptance of the updated policy.</p>
+    <h2>6. Security</h2>
+    <p>We use strong security practices, including:</p>
+    <ul>
+      <li>Encryption in transit (TLS/HTTPS) and at rest.</li>
+      <li>Access controls and authentication for internal systems.</li>
+      <li>Regular security assessments.</li>
+    </ul>
 
-  <h2>Contact Us</h2>
-  <p>If you have any questions or concerns about this Privacy Policy, contact us at: <strong>your.email@example.com</strong></p>
+    <h2>7. Children's Privacy</h2>
+    <p>We do not knowingly collect personal data from children under the applicable minimum age (e.g., 13 in the U.S., or local equivalent). If we discover such data, we will delete it promptly.</p>
+
+    <h2>8. Your Rights & Choices</h2>
+    <p>Depending on your location, you may have rights over your personal data, including:</p>
+    <ul>
+      <li>Access and correction of your data.</li>
+      <li>Deletion of your account and associated data.</li>
+      <li>Portability of your data.</li>
+      <li>Control over location permissions.</li>
+    </ul>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy. If changes are significant, we will notify you via the App or email. The “Effective date” will reflect when updates take effect.</p>
+
+    <h2>10. Contact Us</h2>
+    <p>If you have questions about this Privacy Policy, please contact us:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:vishalpal555@gmail.com">[vishalpal555@gmail.com]</a></li>
+      <li><strong>Website:</strong> <a href="#">[Coming soon......]</a></li>
+    </ul>
+
+    <footer>
+      <p class="muted">This Privacy Policy describes how <strong>Roodo</strong> handles personal information. Replace placeholders before publishing.</p>
+    </footer>
+  </main>
 </body>
 </html>
